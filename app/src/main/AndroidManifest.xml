@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.notification">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hb"
+        android:label="Hostel Buddy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NotifyMain" />
+        <activity android:name=".Activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.RegisterActivity" />
+        <activity android:name=".Activities.SendActivity" />
+
+        <service android:name=".Activities.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <activity android:name=".Activities.NotificationActivity">
+            <intent-filter>
+                <action android:name="in.notify.firebasepush.TARGETNOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.To_Items_" />
+        <activity android:name=".Activities.Show_All_Items_" />
+        <activity android:name=".Activities.ComplaintActivity" />
+        <activity android:name=".Activities.NewComplaint" />
+        <activity android:name=".DetailComplaint" />
+        <activity
+            android:name=".PocketMain"
+            android:label="@string/label1"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CreateActivity" />
+        <activity
+            android:name=".AddIncomeActivity"
+            android:label="@string/label1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrencyList"
+            android:label="@string/label1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddExpenseActivity"
+            android:label="@string/label1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewExpenseActivity"
+            android:label="@string/label1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewSingleExpenseActivity"
+            android:label="@string/title_activity_view_single_expense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddCategoryActivity"
+            android:label="@string/label1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectCategoryActivity"
+            android:label="@string/label1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".minamount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Add_Borrow"
+            android:label="@string/label1" />
+        <activity
+            android:name=".Send_Msg"
+            android:label="@string/label1" />
+        <activity android:name=".Activities.UsersListActivity" />
+        <activity
+            android:name=".models.AboutDevelopers"
+            android:label="@string/title_activity_about_developers"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

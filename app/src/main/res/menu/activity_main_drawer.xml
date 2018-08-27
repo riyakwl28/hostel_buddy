@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/portal"
+            android:icon="@drawable/ic_mode_edit_black_24dp"
+            android:title="Portal" />
+        <item
+            android:id="@+id/pocket_manager"
+            android:icon="@drawable/ic_mode_edit_black_24dp"
+            android:title="Pocket Manager" />
+        <item
+            android:id="@+id/lendlist"
+            android:icon="@drawable/ic_mode_edit_black_24dp"
+            android:title="Lend list" />
+
+
+    </group>
+
+    <item android:title="Extras">
+        <menu>
+            <item
+                android:id="@+id/about_developers"
+                android:icon="@drawable/ic_mode_edit_black_24dp"
+                android:title="About Developers" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_mode_edit_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

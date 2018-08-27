@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.notification.Fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hostelbuddy">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:layout_alignBottom="@+id/profile_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/download" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp"
+            android:text="Username"
+            android:textColor="#ffff00"
+            android:textSize="25sp" />
+
+
+        <!--<Button-->
+        <!--android:id="@+id/show_items"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="64dp"-->
+        <!--android:background="@drawable/primary_color_btn"-->
+        <!--android:text="Lent List"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="#fff" />-->
+
+
+        <!--<Button-->
+        <!--android:id="@+id/To_Items"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/show_items"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="19dp"-->
+        <!--android:background="@drawable/primary_color_btn"-->
+        <!--android:text="Enter Items Lent"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="#fff" />-->
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Activities.NewComplaint">
+
+    <item
+        android:id="@+id/action_attach"
+        android:title="attach"
+        android:icon="@drawable/ic_attach_file_white_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_send"
+        android:title="attach"
+        android:icon="@drawable/ic_send_white_24dp"
+        app:showAsAction="always" />
+
+
+
+
+
+
+</menu>

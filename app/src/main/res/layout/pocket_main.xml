@@ -1,0 +1,177 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PocketMain">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_expense1"
+            android:textSize="22sp"
+            android:text="BALANCE "
+            android:textColor="@color/textTabBright"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_balance1"
+            android:textSize="16sp"
+            android:text="EXPENSES"
+            android:textColor="@color/textTabLight"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+
+        <Button
+            android:id="@+id/H_income"
+            android:layout_width="150dp"
+            android:drawableLeft="@drawable/coinsicon"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/income"
+
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/H_expence"
+            android:layout_alignBottom="@+id/H_expence"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/H_view_expence"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/view"
+            android:drawableLeft="@drawable/moneypigicon"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/H_category"
+            android:layout_alignBottom="@+id/H_category"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+         android:id="@+id/H_view_expence12"
+            android:layout_width="150dp"
+         android:layout_height="80dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/envelopemoneyicon"
+         android:text="@string/Msg"
+         android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/H_view_expence1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addexpense"
+            android:orientation="horizontal">
+
+        <Button
+             android:id="@+id/H_expence"
+            android:background="@drawable/button_background"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/cashregistericon"
+            android:gravity="center"
+            android:text="@string/expence"
+            android:textSize="10sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="156dp" />
+        </LinearLayout>
+
+        <Button
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/H_category"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/dollaricon"
+
+            android:text="@string/category"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/H_income"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp" />
+
+        <Button
+            android:id="@+id/H_view_expence1"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/borrow"
+            android:drawableLeft="@drawable/dollarrotationicon"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/H_category"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/H_add_minimum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Minimum balance"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/H_view_expense1"
+
+
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>

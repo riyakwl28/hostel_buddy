@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.notification.Activities.To_Items_">
+
+
+    <EditText
+        android:id="@+id/given_to"
+        android:hint="Lent To"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_margin="8sp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:background="@drawable/input_background"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/given_name"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:ems="10"
+        android:hint="Object name"
+        android:background="@drawable/input_background"
+        android:layout_margin="8sp"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+         />
+
+
+
+    <Button
+        android:id="@+id/send_here_toItem"
+        android:textColor="#fff"
+        android:background="@drawable/primary_color_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+</LinearLayout>
